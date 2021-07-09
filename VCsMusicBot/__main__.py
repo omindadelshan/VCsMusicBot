@@ -22,3 +22,4 @@ bot = Bot(
 
 bot.start()
 run()
+/help ( hello i Am miUSIC play bot)
