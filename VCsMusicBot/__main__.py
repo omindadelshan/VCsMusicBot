@@ -3,7 +3,7 @@ from pyrogram import Client as Bot
 
 from VCsMusicBot.config import API_HASH
 from VCsMusicBot.config import API_ID
-from VCsMusicBot.config import BG_IMAGE
+
 from VCsMusicBot.config import BOT_TOKEN
 from VCsMusicBot.services.callsmusic import run
 
