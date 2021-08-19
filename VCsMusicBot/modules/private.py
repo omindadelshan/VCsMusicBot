@@ -17,12 +17,12 @@ def _start(client, message):
                         "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "👥 Group", url=f"https://t.me/{SUPPORT_GROUP}"), 
+                        "🎈𝗚𝗿𝗼𝘂𝗽🤖", url=f"https://t.me/sdbotworld"), 
                     InlineKeyboardButton(
-                        "Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "🎈 𝗖𝗵𝗮𝗻𝗻𝗮𝗹 📢", url=f"https://t.me/sdprojectupdates")
                 ],[
                     InlineKeyboardButton(
-                        "🔥 Source Code 🔥", url=f"https://{SOURCE_CODE}")
+                        "🎭Developer🎭", url=f"https://t.me/omindas")
                 ]
             ]
         ),
@@ -37,7 +37,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "💬 Support Chat", url=f"https://t.me/sdbotworld"
                     )
                 ],    
                 [    
@@ -83,12 +83,12 @@ def map(pos):
             [InlineKeyboardButton(text = '▶️ Next', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
-        url = f"https://t.me/{SUPPORT_GROUP}"
+        url = f"https://t.me/sdbotworld"
         button = [
             [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '👥 Group', url=f"https://t.me/{SUPPORT_GROUP}"),
-             InlineKeyboardButton(text = 'Channel 📢', url=f"https://t.me/{UPDATES_CHANNEL}")],
-            [InlineKeyboardButton(text = '🔥 Source Code 🔥', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton(text = '🎈𝗚𝗿𝗼𝘂𝗽🎈', url=f"https://t.me/sdbotworld"),
+             InlineKeyboardButton(text = '🎲𝗖𝗵𝗮𝗻𝗻𝗮𝗹 📢', url=f"https://t.me/sdprojectupdates")],
+            [InlineKeyboardButton(text = '🤖𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿🤖', url=f"https://t.me/omindas")],
             [InlineKeyboardButton(text = '◀️ Back', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -103,7 +103,7 @@ def map(pos):
 @Client.on_message(filters.command(["help","help@VCsMusicBot"]) & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**Hello there! I can play music in the voice chats of telegram groups & channels.**""",
+        f"""**🤔 Hello there! 💥I can play music in the voice chats of telegram groups & channels. So Esy❤️ A Bot By @omindas 🎲.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
