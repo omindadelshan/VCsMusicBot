@@ -17,12 +17,12 @@ def _start(client, message):
                         "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "👥 Group", url=f"https://t.me/{SUPPORT_GROUP}"), 
+                        "👥 Group", url=f"https://t.me/sdbotworld"), 
                     InlineKeyboardButton(
-                        "Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "Channel 📢", url=f"https://t.me/sdprojectupdates")
                 ],[
                     InlineKeyboardButton(
-                        "🔥 Source Code 🔥", url=f"https://{SOURCE_CODE}")
+                        "🔥 Source Code 🔥", url=f"https://github.com")
                 ]
             ]
         ),
@@ -37,7 +37,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "💬 Support Chat", url=f"https://t.me/sdbotworld"
                     )
                 ],    
                 [    
@@ -86,9 +86,9 @@ def map(pos):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
             [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '👥 Group', url=f"https://t.me/{SUPPORT_GROUP}"),
-             InlineKeyboardButton(text = 'Channel 📢', url=f"https://t.me/{UPDATES_CHANNEL}")],
-            [InlineKeyboardButton(text = '🔥 Source Code 🔥', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton(text = '👥 Group', url=f"https://t.me/sdbotworld"),
+             InlineKeyboardButton(text = 'Channel 📢', url=f"https://t.me/sdprojectupdates")],
+            [InlineKeyboardButton(text = '🔥 Source Code 🔥', url=f"https://github.com")],
             [InlineKeyboardButton(text = '◀️ Back', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -103,7 +103,7 @@ def map(pos):
 @Client.on_message(filters.command(["help","help@VCsMusicBot"]) & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**Hello there! I can play music in the voice chats of telegram groups & channels.**""",
+        f"""**🎈Hello there! 🎲I can play music in the voice chats of telegram groups & channels💎💎.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
